@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D31B7C0241C287F00F28D8C /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B7BF241C287F00F28D8C /* DetailTableViewController.swift */; };
 		7DB607B1241AFDA40022F9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB607B0241AFDA40022F9FB /* AppDelegate.swift */; };
 		7DB607B4241AFDA40022F9FB /* RNSRestExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DB607B2241AFDA40022F9FB /* RNSRestExample.xcdatamodeld */; };
 		7DB607B6241AFDA40022F9FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB607B5241AFDA40022F9FB /* SceneDelegate.swift */; };
 		7DB607B8241AFDA40022F9FB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB607B7241AFDA40022F9FB /* MasterViewController.swift */; };
-		7DB607BA241AFDA40022F9FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB607B9241AFDA40022F9FB /* DetailViewController.swift */; };
 		7DB607BD241AFDA40022F9FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB607BB241AFDA40022F9FB /* Main.storyboard */; };
 		7DB607BF241AFDA70022F9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB607BE241AFDA70022F9FB /* Assets.xcassets */; };
 		7DB607C2241AFDA70022F9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB607C0241AFDA70022F9FB /* LaunchScreen.storyboard */; };
 		7DB607CD241AFDA70022F9FB /* RNSRestExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB607CC241AFDA70022F9FB /* RNSRestExampleTests.swift */; };
 		7DB607D8241AFDA70022F9FB /* RNSRestExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB607D7241AFDA70022F9FB /* RNSRestExampleUITests.swift */; };
+		7DB607E6241BEECC0022F9FB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB607E5241BEECC0022F9FB /* NetworkService.swift */; };
+		7DB607EA241BF07C0022F9FB /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB607E9241BF07C0022F9FB /* EmployeeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D31B7BF241C287F00F28D8C /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		7DB607AD241AFDA40022F9FB /* RNSRestExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNSRestExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB607B0241AFDA40022F9FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DB607B3241AFDA40022F9FB /* RNSRestExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RNSRestExample.xcdatamodel; sourceTree = "<group>"; };
 		7DB607B5241AFDA40022F9FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7DB607B7241AFDA40022F9FB /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		7DB607B9241AFDA40022F9FB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7DB607BC241AFDA40022F9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DB607BE241AFDA70022F9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DB607C1241AFDA70022F9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		7DB607D3241AFDA70022F9FB /* RNSRestExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNSRestExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB607D7241AFDA70022F9FB /* RNSRestExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNSRestExampleUITests.swift; sourceTree = "<group>"; };
 		7DB607D9241AFDA70022F9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB607E5241BEECC0022F9FB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7DB607E9241BF07C0022F9FB /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +110,14 @@
 				7DB607B0241AFDA40022F9FB /* AppDelegate.swift */,
 				7DB607B5241AFDA40022F9FB /* SceneDelegate.swift */,
 				7DB607B7241AFDA40022F9FB /* MasterViewController.swift */,
-				7DB607B9241AFDA40022F9FB /* DetailViewController.swift */,
+				7D31B7BF241C287F00F28D8C /* DetailTableViewController.swift */,
 				7DB607BB241AFDA40022F9FB /* Main.storyboard */,
 				7DB607BE241AFDA70022F9FB /* Assets.xcassets */,
 				7DB607C0241AFDA70022F9FB /* LaunchScreen.storyboard */,
 				7DB607C3241AFDA70022F9FB /* Info.plist */,
 				7DB607B2241AFDA40022F9FB /* RNSRestExample.xcdatamodeld */,
+				7DB607E5241BEECC0022F9FB /* NetworkService.swift */,
+				7DB607E9241BF07C0022F9FB /* EmployeeModel.swift */,
 			);
 			path = RNSRestExample;
 			sourceTree = "<group>";
@@ -266,10 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DB607B8241AFDA40022F9FB /* MasterViewController.swift in Sources */,
+				7DB607E6241BEECC0022F9FB /* NetworkService.swift in Sources */,
 				7DB607B4241AFDA40022F9FB /* RNSRestExample.xcdatamodeld in Sources */,
-				7DB607BA241AFDA40022F9FB /* DetailViewController.swift in Sources */,
+				7D31B7C0241C287F00F28D8C /* DetailTableViewController.swift in Sources */,
 				7DB607B1241AFDA40022F9FB /* AppDelegate.swift in Sources */,
 				7DB607B6241AFDA40022F9FB /* SceneDelegate.swift in Sources */,
+				7DB607EA241BF07C0022F9FB /* EmployeeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
