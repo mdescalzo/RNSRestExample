@@ -53,13 +53,13 @@ class DetailTableViewController: UITableViewController {
         cell.textLabel?.text = key.rawValue
         switch key {
         case .id:
-            cell.detailTextLabel?.text = detailItem.id
+            cell.detailTextLabel?.text = "\(detailItem.id)"
         case .name:
             cell.detailTextLabel?.text = detailItem.name
         case .salary:
-            cell.detailTextLabel?.text = detailItem.salary
+            cell.detailTextLabel?.text = "\(detailItem.salary)"
         case .age:
-            cell.detailTextLabel?.text = detailItem.age
+            cell.detailTextLabel?.text = "\(detailItem.age)"
         case .profileImagePath:
             cell.detailTextLabel?.text = detailItem.profileImagePath
         }

@@ -10,10 +10,10 @@ import Foundation
 
 struct EmployeeModel: Codable {
     
-    let id: String
+    let id: Int
     let name: String
-    let salary: String
-    let age: String
+    let salary: Int
+    let age: Int
     let profileImagePath: String
     
     enum CodingKeys: String, CodingKey, CaseIterable {

@@ -15,6 +15,7 @@ enum NetworkError : Error {
 
 struct ServiceResponse: Codable {
     let status: String
+    let message: String
     let data: [EmployeeModel]
 }
 
