@@ -66,6 +66,11 @@ class DetailTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        for indexPath in tableView.indexPathsForSelectedRows ?? [] {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
     
     /*
     // Override to support conditional editing of the table view.

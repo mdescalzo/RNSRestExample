@@ -31,9 +31,9 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
                 refreshContent()
             }
             DispatchQueue.main.async { [weak self] in
-                guard let this = self else { return }
-                this.tableView.reloadData()
-                this.configureFooterView()
+                guard self != nil else { return }
+                self?.tableView.reloadData()
+                self?.configureFooterView()
             }
         }
     }
@@ -45,11 +45,11 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     var error: Error? = nil {
         didSet {
-            if error != nil {
+            if let error = self.error {
                 DispatchQueue.main.async { [weak self] in
-                    guard let this = self else { return }
-                    print(this.error!)
-                    this.errorLabel.text = "⛔️\n" + this.error!.localizedDescription
+                    guard self != nil else { return }
+                    print(error)
+                    self?.errorLabel.text = "⛔️\n" + error.localizedDescription
                 }
                 state = .error
             }
@@ -105,8 +105,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     func refreshContent() {
         refreshControl?.beginRefreshing()
         networkService.fetchRecords { [weak self] (fetchResult) in
-            guard let this = self else { return }
-            
+            guard self != nil else { return }
+
             defer {
                 DispatchQueue.main.async { [weak self] in
                     self?.refreshControl?.endRefreshing()
@@ -114,17 +114,17 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             }
             
             guard fetchResult.error == nil else {
-                this.error = fetchResult.error
+                self?.error = fetchResult.error
                 return
             }
                
-            guard let restults = fetchResult.restults else {
-                this.state = .empty
+            guard let restults = fetchResult.results else {
+                self?.state = .empty
                 return
             }
             
-            this.employeeRecords = restults
-            this.state = .viewing
+            self?.employeeRecords = restults
+            self?.state = .viewing
         }
     }
 

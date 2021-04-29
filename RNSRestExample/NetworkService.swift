@@ -20,7 +20,7 @@ struct ServiceResponse: Codable {
 }
 
 struct FetchResult {
-    let restults: [EmployeeModel]?
+    let results: [EmployeeModel]?
     let error: Error?
 }
 
@@ -33,7 +33,7 @@ class NetworkService {
     func fetchRecords(completion: @escaping (FetchResult) -> Void) {
         
         func errorCompletion(_ error: Error) {
-            completion(FetchResult(restults: nil, error: error))
+            completion(FetchResult(results: nil, error: error))
         }
         
         guard let url = URL(string: endpoint) else {
@@ -56,9 +56,11 @@ class NetworkService {
                 return
             }
             
+            var serialized: Any?
             do {
+                serialized = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
                 let result = try JSONDecoder().decode(ServiceResponse.self, from: data)
-                completion(FetchResult(restults: result.data, error: nil))
+                completion(FetchResult(results: result.data, error: nil))
             } catch {
                 errorCompletion(error)
             }
